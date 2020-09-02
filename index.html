@@ -16,8 +16,34 @@ uor1 {
 	color: #F18340;
 }
 
-body {
-  background-color: #07103F;
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .headbackground {
+	padding-bottom: 0;
+    background: url(https://media.discordapp.net/attachments/747365948293644388/750471753351823400/UOR_Website_Background.png?width=1080&height=608) no-repeat center center fixed;
+    background-attachment: fixed;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 504px;
+}
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: #07103F;
+  }
+  .headbackground {
+	padding-bottom: 0;
+    background: url(https://media.discordapp.net/attachments/747365948293644388/750481592249614366/UOR_Website_Background.png?width=1214&height=405) no-repeat center center fixed;
+    background-attachment: fixed;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 504px;
+}
 }
 
 header {
@@ -33,10 +59,10 @@ header {
   top: 1px;
 }
 	
-	.uorlogo {
-		position: relative:
-		top : 1px;
-	}
+.uorlogo {
+	position: relative:
+	top : 1px;
+}
 
 @font-face {
    font-family: F1;
@@ -117,7 +143,6 @@ section {
 nav {
   width: 100%;
   margin: 0;
-	float: right;
   background: #F18340;
   padding: 0px 0;
   box-shadow: 0px 0px 0px #dedede;
