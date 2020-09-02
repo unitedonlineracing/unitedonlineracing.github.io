@@ -18,9 +18,9 @@ uor1 {
 
 @media only screen and (max-width: 600px) {
   body {
-    background-color: lightblue;
+    background-color: #07103F;
   }
-  .headbackground {
+	.headbackground {
 	padding-bottom: 0;
     background: url(https://media.discordapp.net/attachments/747365948293644388/750471753351823400/UOR_Website_Background.png?width=1080&height=608) no-repeat center center fixed;
     background-attachment: fixed;
@@ -43,6 +43,76 @@ uor1 {
     background-repeat: no-repeat;
     background-size: contain;
     height: 504px;
+}
+  nav {
+    width: 100%;
+    margin: 0;
+    background: #F18340;
+    padding: 0px 0;
+    box-shadow: 0px 0px 0px #dedede;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px 15px 15px 15px;
+  text-decoration: none;
+  color: #07103F;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0px 0px;
+  float: right;
+
+}
+	
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+	
+nav ul li a:hover {
+  color: #07103F;
+}
+	
+nav.shift ul li a {
+  position: relative;
+  z-index: 1;
+  float: right;
+}
+nav.shift ul li a:hover {
+  color: #F18340;  
+  float: right;
+}
+nav.shift ul li a:after {
+  display: block;
+  float: right;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #07103F;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+nav.shift ul li a:hover:after {
+  opacity: 1;
+  float: right;
+  visibility: visible;
+  height: 100%;
 }
 }
 
@@ -121,16 +191,7 @@ h2 {
     margin: auto;
     margin-top: 15px;
 }
-	
-.headbackground {
-	padding-bottom: 0;
-    background: url(https://media.discordapp.net/attachments/747365948293644388/750481592249614366/UOR_Website_Background.png?width=1214&height=405) no-repeat center center fixed;
-    background-attachment: fixed;
-    background-position: 50% 0%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 504px;
-}
+
 	
 .center {
   text-align: center;
@@ -140,76 +201,7 @@ section {
   height: 100vh;
 }
 
-nav {
-  width: 100%;
-  margin: 0;
-  background: #F18340;
-  padding: 0px 0;
-  box-shadow: 0px 0px 0px #dedede;
-}
 
-nav ul {
-  list-style: none;
-  text-align: center;
-}
-nav ul li {
-  display: inline-block;
-}
-nav ul li a {
-  display: block;
-  padding: 15px 15px 15px 15px;
-  text-decoration: none;
-  color: #07103F;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin: 0px 0px;
-  float: right;
-
-}
-	
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
-  transition: all .5s;
-}
-	
-nav ul li a:hover {
-  color: #07103F;
-}
-	
-nav.shift ul li a {
-  position: relative;
-  z-index: 1;
-  float: right;
-}
-nav.shift ul li a:hover {
-  color: #F18340;  
-  float: right;
-}
-nav.shift ul li a:after {
-  display: block;
-  float: right;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  width: 100%;
-  height: 1px;
-  content: '.';
-  color: transparent;
-  background: #07103F;
-  visibility: none;
-  opacity: 0;
-  z-index: -1;
-}
-nav.shift ul li a:hover:after {
-  opacity: 1;
-  float: right;
-  visibility: visible;
-  height: 100%;
-}
 
 </style>
 
